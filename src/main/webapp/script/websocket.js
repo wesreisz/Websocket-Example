@@ -6,7 +6,7 @@ ws.onopen = function() {
     divMessage.innerHTML =  divMessage.innerHTML + "WebSocket opened."  + "<br />";
     var varCounter = 0;
     var varName = function(){
-        if(varCounter <= 10) {
+        if(varCounter < 10) {
             varCounter++;
             ws.send("Hello Server: " + varCounter);
         } else {

@@ -18,8 +18,8 @@
 <body>
 
     <div id="serverStatus" class="circle">Server Status</div>
-    <div>Server Status:</div>
-    <div id="divMessage"></div>
+    <div><strong>Server Status:</strong></div>
+    <div id="divMessage" style="padding-left: 10px"></div>
     <script src="script/websocket.js"></script>
 </body>
 </html>
