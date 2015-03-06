@@ -56,7 +56,8 @@ public class SocketServlet extends WebSocketServlet {
 
     @Override
     public void configure(WebSocketServletFactory factory) {
-        factory.getPolicy().setIdleTimeout(10000);//times out after 10 seconds
+        //change this to set a timeout
+        //factory.getPolicy().setIdleTimeout(10000);//times out after 10 seconds
         factory.register(SocketServlet.class);
     }
 }
